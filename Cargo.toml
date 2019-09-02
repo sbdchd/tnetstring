@@ -1,0 +1,10 @@
+[package]
+name = "tnetstring"
+version = "0.1.0"
+authors = ["Steve Dignam <steve@dignam.xyz>"]
+edition = "2018"
+description = "TNetString parser for Rust"
+license = "AGPL-3.0"
+
+[dependencies]
+maplit = "1.0.2"
