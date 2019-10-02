@@ -10,9 +10,9 @@ jobs:
       # https://circleci.com/docs/2.0/caching/
       - restore_cache:
           keys:
-            - tnetstring-v1-{{ .Branch }}-{{ checksum "Cargo.lock" }}
-            - tnetstring-v1-{{ .Branch }}-
-            - tnetstring-v1-
+            - tnetstring-v2-{{ .Branch }}-{{ checksum "Cargo.lock" }}
+            - tnetstring-v2-{{ .Branch }}-
+            - tnetstring-v2-
       - run:
           name: run lints
           command: |
@@ -20,7 +20,7 @@ jobs:
       - save_cache:
           paths:
             - ~/.cargo/
-          key: tnetstring-v1-{{ .Branch }}-{{ checksum "Cargo.lock" }}
+          key: tnetstring-v2-{{ .Branch }}-{{ checksum "Cargo.lock" }}
 
   lint:
     docker:
@@ -30,9 +30,9 @@ jobs:
       # https://circleci.com/docs/2.0/caching/
       - restore_cache:
           keys:
-            - tnetstring-v1-{{ .Branch }}-{{ checksum "Cargo.lock" }}
-            - tnetstring-v1-{{ .Branch }}-
-            - tnetstring-v1-
+            - tnetstring-v2-{{ .Branch }}-{{ checksum "Cargo.lock" }}
+            - tnetstring-v2-{{ .Branch }}-
+            - tnetstring-v2-
       - run:
           name: install dependencies
           command: |
@@ -47,7 +47,7 @@ jobs:
       - save_cache:
           paths:
             - ~/.cargo/
-          key: tnetstring-v1-{{ .Branch }}-{{ checksum "Cargo.lock" }}
+          key: tnetstring-v2-{{ .Branch }}-{{ checksum "Cargo.lock" }}
 
 workflows:
   version: 2
