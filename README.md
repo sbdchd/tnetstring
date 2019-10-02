@@ -1,6 +1,6 @@
 # tnetstring
 
-A [TNetString](https://tnetstrings.info) parser for Rust.
+A [TNetString](https://tnetstrings.info) serde plugin and parser for Rust.
 
 ## Install
 
@@ -11,7 +11,8 @@ cargo add tnetstring
 ## Why?
 
 While there exists a library for parsing TNetStrings in Rust, it doesn't
-compile on latest and isn't available through Cargo.
+compile on latest and isn't available through Cargo. It also lacks serde
+support.
 
 ## Prior Art
 
@@ -30,5 +31,4 @@ cargo publish
 
 ## TODO
 
-- serializing to TNetString
-- serde support
+- serde support for `f32` and `f64`
