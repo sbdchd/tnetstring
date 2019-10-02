@@ -41,6 +41,7 @@ pub struct Deserializer<'de> {
 }
 
 impl<'de> Deserializer<'de> {
+    #[allow(clippy::should_implement_trait)]
     pub fn from_str(input: &'de str) -> Self {
         Deserializer { input }
     }
