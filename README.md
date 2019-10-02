@@ -1,4 +1,4 @@
-# tnetstring
+# tnetstring [![cargo-badge](https://img.shields.io/crates/v/tnetstring.svg)](https://crates.io/crates/tnetstring) [![CircleCI](https://circleci.com/gh/sbdchd/tnetstring.svg?style=svg)](https://circleci.com/gh/sbdchd/tnetstring)
 
 A [TNetString](https://tnetstrings.info) serde plugin and parser for Rust.
 
