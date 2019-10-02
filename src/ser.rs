@@ -46,7 +46,7 @@ where
         .output
         .last()
         .ok_or(Error::StackProblem)
-        .map(|x| String::from(x.as_ref()))
+        .map(String::from)
 }
 
 // due to the structure of serde serializers being broken into multiple steps we

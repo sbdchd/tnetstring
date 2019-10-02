@@ -40,7 +40,7 @@ impl de::Error for Error {
 }
 
 impl From<std::string::FromUtf8Error> for Error {
-    fn from(error: std::string::FromUtf8Error) -> Self {
+    fn from(_error: std::string::FromUtf8Error) -> Self {
         Error::NonUtf8Str
     }
 }
